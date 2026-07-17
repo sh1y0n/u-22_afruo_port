@@ -374,7 +374,7 @@ class PortGuardApp:
                     capture_output=True, text=True, encoding="utf-8", errors="replace", check=False,
                     creationflags=subprocess.CREATE_NO_WINDOW,
                 )
-                self._log(f"OPEN netsh add rule name={rule_name} -> returncode={res.returncode}")
+               #self._log(f"OPEN netsh add rule name={rule_name} -> returncode={res.returncode}")
                 if res.returncode != 0:
                     raw = (res.stdout or "") + (res.stderr or "")
                     failures.append((proto, raw.strip()))
@@ -419,7 +419,7 @@ class PortGuardApp:
                     capture_output=True, text=True, encoding="utf-8", errors="replace", check=False,
                     creationflags=subprocess.CREATE_NO_WINDOW,
                 )
-                self._log(f"CLOSE netsh delete rule name={rule_name} -> returncode={res.returncode}")
+                #self._log(f"CLOSE netsh delete rule name={rule_name} -> returncode={res.returncode}")
                 raw = (res.stdout or "") + (res.stderr or "")
                 
                 if res.returncode != 0:
