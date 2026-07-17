@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Minecraft",
+    "port": "25565"
+  },
+  {
+    "name": "ARK",
+    "port": "7778"
+  }
+]
