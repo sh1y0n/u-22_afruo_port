@@ -78,10 +78,10 @@ class PortGuardApp:
         ttk.Checkbutton(proto_frame, text="TCP", variable=self.tcp_var).pack(side="left", padx=(0,8))
         ttk.Checkbutton(proto_frame, text="UDP", variable=self.udp_var).pack(side="left")
 
-        ttk.Label(main, text="警告する時間（時間）").pack(anchor="w")
-        self.warning_var = tk.StringVar(value="2")
-        self.warning_entry = ttk.Entry(main, textvariable=self.warning_var)
-        self.warning_entry.pack(fill="x", pady=(0, 10))
+        #ttk.Label(main, text="警告する時間（時間）").pack(anchor="w")
+        #self.warning_var = tk.StringVar(value="2")
+        #self.warning_entry = ttk.Entry(main, textvariable=self.warning_var)
+        #self.warning_entry.pack(fill="x", pady=(0, 10))
 
         button_frame = ttk.Frame(main)
         button_frame.pack(fill="x", pady=(6, 12))
